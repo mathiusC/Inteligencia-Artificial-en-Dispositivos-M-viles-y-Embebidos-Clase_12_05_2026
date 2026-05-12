@@ -4,4 +4,4 @@ source ../tf-env/bin/activate
 
 python proyectofinaltflite.py
 
-git clone mathiusC/Inteligencia-Artificial-en-Dispositivos-M-viles-y-Embebidos-Clase_12_05_2026.git
+git clone https://github.com/mathiusC/Inteligencia-Artificial-en-Dispositivos-M-viles-y-Embebidos-Clase_12_05_2026
