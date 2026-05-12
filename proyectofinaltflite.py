@@ -3,7 +3,7 @@ import cv2
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-face_cascade = cv2.CascadeClassifier('C:\\Users\\Juan\\Documents\\ProyectoTinyLite\\haarcascade_frontalface_default.xml')
+#face_cascade = cv2.CascadeClassifier('C:\\Users\\Juan\\Documents\\ProyectoTinyLite\\haarcascade_frontalface_default.xml')
 interpreter = tf.lite.Interpreter(model_path = 'C:\\Users\\Juan\\Documents\\ProyectoTinyLite\\my_model.tflite')
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
@@ -51,7 +51,7 @@ prediction_classes = np.argmax(tflite_model_predictions, axis=1)
 print(class_names[prediction_classes[0]])
 prediccion = class_names[prediction_classes[0]]
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+#faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 for (x, y, w, h) in faces:
     if prediccion == 'Withmask':
         cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 3)
