@@ -1,6 +1,6 @@
 cd ~/Mask_Classification_Raspberry
   
-source ../tf-env/bin/activate
+source tf-env/bin/activate
 
 python proyectofinaltflite.py
 
