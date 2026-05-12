@@ -1,0 +1,7 @@
+cd ~/Mask_Classification_Raspberry
+  
+source ../tf-env/bin/activate
+
+python proyectofinaltflite.py
+
+git clone https://github.com/Raldo26/Mask_Classification_Raspberry
